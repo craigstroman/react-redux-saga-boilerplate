@@ -6,6 +6,7 @@ import Header from '../../components/Header/index';
 import Dashboard from '../Dashboard/index';
 import Posts from '../Posts/index';
 import Post from '../Post/index';
+import Users from '../Users/index';
 
 const Container = styled.div`
   text-align: center;
@@ -31,6 +32,11 @@ const Home = () => (
         exact
         path="/post/:id"
         component={Post}
+      />
+      <Route
+        exact
+        path="/users"
+        component={Users}
       />
     </HashRouter>
   </Container>
